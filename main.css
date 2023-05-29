@@ -2,7 +2,7 @@ h1 {
     color: red;
 }
 
-.slidebar{
+.slidebar {
     background-color: black;
     height: 100vh;
     width: 10%;
@@ -166,7 +166,13 @@ footer {
     }
 
     .slidebar.show {
+        display: block;
         left: 0;
+    }
+
+    li {
+        margin-left: -20%;
+
     }
 }
 
@@ -211,5 +217,10 @@ footer {
 
     .slidebar.show {
         left: 0;
+        width: 30%;
+    }
+
+    li {
+        margin-left: -20%;
     }
 }
