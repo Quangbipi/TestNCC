@@ -1,0 +1,215 @@
+h1 {
+    color: red;
+}
+
+.slidebar{
+    background-color: black;
+    height: 100vh;
+    width: 10%;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    color: white;
+    border-bottom: 1px solid white;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+    border-color: white;
+    padding-bottom: 10px;
+    margin-left: -35%;
+    padding-left: 10px;
+}
+
+ul {
+
+
+    list-style-type: none;
+
+}
+
+.main-screen {
+    height: 100vh;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10%;
+
+}
+
+.container {
+
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.image-top {
+    margin-top: 20px;
+}
+
+.describe {
+    width: 80%;
+    height: 210px;
+    margin-top: 30px;
+    background-color: #EFEFEF;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+img {
+    float: right;
+    /* đặt hình ảnh float sang phải */
+    margin: 0 0 10px 10px;
+    /* đặt khoảng cách giữa hình ảnh và văn bản */
+}
+
+.square-image img {
+    float: left;
+    margin: 5px;
+    height: 128px;
+    width: 128px;
+}
+
+.square p {
+    text-align: justify;
+    font-size: 16px;
+}
+
+.lorem-ipsum {
+    display: flex;
+    justify-content: space-between;
+
+    width: 80%;
+}
+
+.square {
+    flex: 1;
+
+}
+
+.square-center {
+    flex: 1;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-top: 100px;
+}
+
+.footer-p p {
+    justify-content: flex-start;
+}
+
+#toggle-sidebar {
+    display: none;
+    /* Ẩn biểu tượng trên màn hình máy tính bảng */
+}
+
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    .slidebar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .main-screen {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .describe {
+        width: 80%;
+    }
+
+    .lorem-ipsum {
+        flex-direction: column;
+    }
+
+    .square-center {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #toggle-sidebar {
+        display: block;
+        /* Hiển thị biểu tượng trên màn hình máy tính bảng */
+        position: fixed;
+        top: 20px;
+        left: 60px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .slidebar.show {
+        left: 0;
+    }
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .slidebar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .main-screen {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .describe {
+        width: 80%;
+    }
+
+    .lorem-ipsum {
+        flex-direction: column;
+    }
+
+    .square-center {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #toggle-sidebar {
+        display: block;
+        /* Hiển thị biểu tượng trên màn hình máy tính bảng */
+        position: fixed;
+        top: 20px;
+        left: 60px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .slidebar.show {
+        left: 0;
+    }
+}
